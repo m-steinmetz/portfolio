@@ -1,0 +1,64 @@
+.source-code-font {
+    font-family: "Source Code Pro", monospace;
+}
+
+body {
+    background-color: #1e1e2f;
+    margin: 0;
+}
+
+nav {
+    background-color: #28283e;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-title {
+    font-size: 32px;
+}
+
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.neon-logo {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ff69b4;
+    /* glow effect */
+    text-shadow:
+        0 0 5px #ff69b4,
+        0 0 10px #ff69b4,
+        0 0 20px #ff69b4,
+        0 0 40px #ff69b4,
+        0 0 80px #ff69b4;
+    /* flicker effect every 2 seconds */
+    animation: flicker 2s infinite alternate;
+}
+
+/* custom animation for neon sign look */
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 5px #ff69b4,
+            0 0 10px #ff69b4,
+            0 0 20px #ff69b4,
+            0 0 40px #ff69b4,
+            0 0 80px #ff69b4;  
+    }
+    20%, 24%, 55% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
