@@ -5,21 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mackenzi Steinmetz | Portfolio</title>
     <link rel="stylesheet" href="main.css">
-    <!-- Source Code Pro font -->
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar source-code-font">
         <div class="nav-title">mackenzi steinmetz</div>
         <ul class="nav-tabs">
-            <li>home</li>
-            <li>about</li>
-            <li>projects</li>
-            <li>contact</li>
+            <li><a href="index.html" class="active" >home</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
     <h1 class="neon-logo source-code-font">ms.dev_</h1>
+    <p class="tagline roboto-font">Frontend Developer with a Creative Edge</p>
+    <a href="projects.html"><div class="work-button">
+        <p class="roboto-font">View My Work</p>
+    </div></a>
+    <div class="about">
+        <p class="about-title roboto-font">About Me</p>
+        <div class="about-container">
+            <div class="about-text">
+                <p class="source-code-font">
+                Hi! I'm Mackenzi, a web developer who's all about designing and implementing clean, user-friendly websites with a strong
+                focus on design and usability. I love turning ideas into functional interfaces that people enjoy using. Right now, I'm 
+                expanding my knowledge on React, Javascript, and other modern web tools, and I am always excited to learn and take on new
+                challenges
+                </p>
+                <p class="source-code-font">
+                I recently graduated from Michigan State University with a degree in Computer Science, where I built a solid foundation in
+                programming and problem-solving. My time in school fueled my passion for coding and design, and now I'm eager to bring those
+                skills into real-world projects and grow as a developer.
+                </p>
+            </div>
+            <img src="me.png" alt="Picture Of Me" class="about-image">
+        </div>
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="https:/www.linkedin.com/in/mackenzi-steinmetz-13a36a22b" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn Logo">
+            </a>
+            <a href="https://github.com/m-steinmetz" target="_blank">
+                <img src="github-icon.png" alt="GitHub Logo">
+            </a>
+            <a href="assets/MackenziSteinmetzResume.pdf" download="MackenziSteinmetzResume.pdf">
+                <img src="resume-icon.png" alt="Resume Download" class="resume-icon">
+            </a>
+        </div>
+        <p class="copyright roboto-font">&copy; 2025 Mackenzi Steinmetz</p>
+    </footer>
 </body>
 </html>
