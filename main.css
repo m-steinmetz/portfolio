@@ -137,7 +137,7 @@ a {
 
 .about-container {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 40px;
 }
 
