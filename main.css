@@ -254,4 +254,9 @@ footer {
     .nav-tabs {
         top: 20%;
     }
+
+    .tagline {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
