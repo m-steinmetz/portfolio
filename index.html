@@ -14,17 +14,26 @@
 <body>
     <nav class="navbar source-code-font">
         <div class="nav-title">mackenzi steinmetz</div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+
         <ul class="nav-tabs">
             <li><a href="index.html" class="active" >home</a></li>
             <li><a href="projects.html">projects</a></li>
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
-    <h1 class="neon-logo source-code-font">ms.dev_</h1>
+    <h1 class="neon-logo source-code-font">ms.dev</h1>
     <p class="tagline roboto-font">Frontend Developer with a Creative Edge</p>
-    <a href="projects.html"><div class="work-button">
-        <p class="roboto-font">View My Work</p>
-    </div></a>
+    <div class="button-wrapper">
+        <a href="projects.html" class="work-link">
+            <div class="work-button">
+                <p class="roboto-font">View My Work</p>
+            </div>
+        </a>
+    </div>
     <div class="about">
         <p class="about-title roboto-font">About Me</p>
         <div class="about-container">
@@ -33,7 +42,7 @@
                 Hi! I'm Mackenzi, a web developer who's all about designing and implementing clean, user-friendly websites with a strong
                 focus on design and usability. I love turning ideas into functional interfaces that people enjoy using. Right now, I'm 
                 expanding my knowledge on React, Javascript, and other modern web tools, and I am always excited to learn and take on new
-                challenges
+                challenges.
                 </p>
                 <p class="source-code-font">
                 I recently graduated from Michigan State University with a degree in Computer Science, where I built a solid foundation in
@@ -58,5 +67,13 @@
         </div>
         <p class="copyright roboto-font">&copy; 2025 Mackenzi Steinmetz</p>
     </footer>
+    <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navTabs = document.querySelector('.nav-tabs');
+
+    menuToggle.addEventListener('click', () => {
+        navTabs.classList.toggle('open');
+    });
+    </script>
 </body>
 </html>
