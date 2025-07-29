@@ -251,10 +251,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .nav-tabs {
-        top: 20%;
-    }
-
     .nav-title {
         font-size: clamp(1rem, 5vw, 2rem);
     }
@@ -266,7 +262,11 @@ footer {
     .tagline {
         padding-left: 20px;
         padding-right: 20px;
+        font-size:18px;
     }
 
-
+    .about {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
