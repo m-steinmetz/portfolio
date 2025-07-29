@@ -245,10 +245,13 @@ footer {
     }
   }
   
-  
   .about-container {
     flex-direction: column;
-    
   }
+}
 
+@media (max-width: 480px) {
+    .nav-tabs {
+        top: 15%;
+    }
 }
