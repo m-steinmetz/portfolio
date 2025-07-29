@@ -255,8 +255,18 @@ footer {
         top: 20%;
     }
 
-    .tagline {
-        padding-left: 10px;
-        padding-right: 10px;
+    .nav-title {
+        font-size: clamp(1rem, 5vw, 2rem);
     }
+
+    .neon-logo {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
 }
