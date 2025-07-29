@@ -266,7 +266,15 @@ footer {
     }
 
     .about {
-        margin-left: 10px;
-        margin-right: 10px;
+       width: 70%;
+       margin: 0 auto; 
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 14px;
     }
 }
