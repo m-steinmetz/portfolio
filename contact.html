@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mackenzi Steinmetz | Portfolio</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,28 +29,25 @@
     <h1 class="neon-logo source-code-font">ms.dev</h1>
     <p class="tagline roboto-font">Junior Developer with a Creative Edge</p>
 
-    <p>Have a question or want to work together? I'd love to hear from you.</p>
+    <p class="tagline-contact roboto-font">Have a question or want to work together? I'd love to hear from you.</p>
 
-    <form action="https://formspree.io/f/mvgqvawd" method="POST">
-        <label>
-            Your email:
-            <input type="email" name="email">
-        </label>
-        <label>
-            Your message:
-            <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-    </form>
+    <div class="contact">
+        <div class="contact-container">
+            <form action="https://formspree.io/f/mvgqvawd" method="POST">
+                <label class="source-code-font">
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label class="source-code-font">
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <button class="roboto-font" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
-    <p>Or reach out directly:</p>
-    <ul>
-        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/yourname">linkedin.com/in/yourname</a></li>
-    </ul>
-
-    <footer class="projects-footer">
+    <footer>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/mackenzi-steinmetz-13a36a22b" target="_blank">
                 <img src="linkedin-icon.png" alt="LinkedIn Logo">
@@ -63,5 +61,13 @@
         </div>
         <p class="copyright roboto-font">&copy; 2025 Mackenzi Steinmetz</p>
     </footer>
+    <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navTabs = document.querySelector('.nav-tabs');
+
+    menuToggle.addEventListener('click', () => {
+        navTabs.classList.toggle('open');
+    });
+    </script>
 </body>
 </html>

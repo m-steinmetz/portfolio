@@ -1,0 +1,83 @@
+.tagline-contact {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact {
+    background-color: #28283e;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px;
+    color: white;
+    border: #008fbf 3px solid;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #ff69b4;
+}
+
+.contact-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.contact-container label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-container label input,
+.contact-container label textarea {
+    margin-top: 10px;
+}
+
+.contact-container textarea {
+  min-height: 150px;
+}
+
+.contact-container button[type="submit"] {
+  background-color: #ff69b4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fill;
+  margin: 0 auto;
+}
+
+.contact-container button[type="submit"]:hover {
+  background-color: #008fbf;
+}
+
+.contact-container input[type="email"],
+.contact-container textarea {
+    background-color: #1e1e2f;
+    color: white;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-container input[type="email"]:focus,
+.contact-container textarea:focus {
+    border-color: #008fbf;
+    outline: none;
+    box-shadow: 0 0 15px #ff69b4;
+}
